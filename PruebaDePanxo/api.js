@@ -3,7 +3,7 @@ function obtenerChiste(){
     .then(res => res.json())
     .then(data =>{
         const chiste = data.value;
-        document.getElementById('chisteInput1').value = chiste;
+        document.getElementById('chisteArea1').value = chiste;
     })
     .catch(error =>{
         console.error('Error al obtener el chiste:',error);
@@ -14,5 +14,5 @@ function obtenerChiste(){
  * esta es para el boton limpiar
  */
 document.getElementById('clear').onclick = function(){
-    document.getElementById('chisteInput1').value = '';
+    document.getElementById('chisteArea1').value = '';
 }

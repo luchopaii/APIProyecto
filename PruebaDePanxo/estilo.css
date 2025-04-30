@@ -21,6 +21,7 @@ body{
     border-radius: 12px;
     margin: auto;
     margin-top: 10px;
+    width: 700px;
 
 }
 
@@ -37,7 +38,7 @@ body{
     padding: 10px;
 }
 
-#chisteInput1{
+#chisteArea1{
     border: 2px solid;
     resize: none;
     text-align: center;
@@ -86,13 +87,13 @@ hr{
 visibility: hidden;
 }
 
-#chisteInput1::-webkit-scrollbar{
+#chisteArea1::-webkit-scrollbar{
     width: 7px;
     background-color:wheat;
     border-radius: 12px;
     border: 1px solid;
 }
-#chisteInput1::-webkit-scrollbar-thumb{
+#chisteArea1::-webkit-scrollbar-thumb{
     width: 7px;
     border-radius: 12px;
     border: 1px solid;
