@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChuckNurrisEsBakan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1 class="titulo1">ChuckProyect</h1>
+    <hr>
+    <img class ="pixelart" src="imagenes/image.png"
+     alt="">
+    <p class="intro">Esta es una aplicacion de practica donde se podran mostrar chistes aleatorios de <strong>Chuck Nurris</strong>,esta pagina y/o aplicacion tiene involucrada una <strong> API</strong> para hacer que esto sea posible</p>
+
+    
+    <div class="container">   
+        <label for="ChistesRandom"><strong> Aqui se generara un chiste random de chuck nurris</strong></label>
+
+        <textarea id="chisteInput1" rows="2" style="width: 80%;" readonly>Chiste aqui</textarea>
+    </div>
+    <div class="botones">
+        <button onclick= "obtenerChiste()" class="btn1"><strong>Presiona aqui para un chiste</strong></button>
+        <button id="clear" class="btn2"><strong>Limpiar</strong></button>
+    </div>
+</body>
+<script src="api.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</html>
