@@ -3,28 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChuckNurrisEsBakan</title>
+    <title>ChuckProyect</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1 class="titulo1">ChuckProyect</h1>
+    <!-- Title -->
+    <div class="titleContainer">
+        <h1 class="titulo1">CHUCKPROYECT</h1>
+    </div>
     <hr>
-    <img class ="pixelart" src="imagenes/image.png"
-     alt="">
-    <p class="intro">Esta es una aplicacion de practica donde se podran mostrar chistes aleatorios de <strong>Chuck Nurris</strong>,esta pagina y/o aplicacion tiene involucrada una <strong> API</strong> para hacer que esto sea posible</p>
 
-    
-    <div class="container">   
-        <label for="ChistesRandom"><strong> Aqui se generara un chiste random de chuck nurris</strong></label>
+    <!-- GIF -->
+    <div class="tenor-gif-embed" data-postid="9154897672815980542" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+        <a href="https://tenor.com/view/thenorris-chuck-norris-chucknorris-nor72-gif-9154897672815980542">Thenorris Chuck Sticker</a> from 
+        <a href="https://tenor.com/search/thenorris-stickers">Thenorris Stickers</a>
+    </div>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
-        <textarea id="chisteArea1" rows="2" style="width: 80%;" readonly>Chiste aqui</textarea>
+    <!-- Random Joke -->
+    <div class="container mt-4">
+        <label for="ChistesRandom" class="form-label"><strong>Aquí se generará un chiste random de Chuck Norris</strong></label>
+        <textarea id="chisteArea1" rows="2" class="form-control" readonly>Chiste aquí</textarea>
     </div>
-    <div class="botones">
-        <button onclick= "obtenerChiste()" class="btn1"><strong>Presiona aqui para un chiste</strong></button>
-        <button id="clear" class="btn2"><strong>Limpiar</strong></button>
+
+    <!-- Buttons -->
+    <div class="botones mt-3">
+        <button onclick="obtenerChiste()" class="btn1 btn btn-primary"><strong>Presiona aquí para un chiste</strong></button>
+        <button id="clear" class="btn2 btn btn-secondary"><strong>Limpiar</strong></button>
     </div>
+
+    <!-- Fun Facts -->
+    <div class="container mt-5">
+        <h2 class="text-center">Chuck Norris Fun Facts</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Chuck Norris can divide by zero.</li>
+            <li class="list-group-item">When Chuck Norris enters a room, he doesn’t turn the lights on. He turns the dark off.</li>
+            <li class="list-group-item">Chuck Norris counted to infinity. Twice.</li>
+        </ul>
+    </div>
+
+    <!-- Img Gallery -->
+    <div class="container mt-5">
+        <h2 class="text-center">Chuck Norris Gallery</h2>
+        <div class="row">
+            <div class="col-6 col-md-4 mb-3">
+                <img src="https://via.placeholder.com/150" class="img-fluid rounded" alt="Chuck Image 1">
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+                <img src="https://via.placeholder.com/150" class="img-fluid rounded" alt="Chuck Image 2">
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+                <img src="https://via.placeholder.com/150" class="img-fluid rounded" alt="Chuck Image 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5 bg-light py-3">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="AboutUs.html">About Us</a>
+            </li>
+        </ul>
+        <p class="text-center mt-3">© 2025 ChuckProyect. All rights are NOT reserved.</p>
+    </footer>
+
+    <script src="api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
-<script src="api.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </html>
