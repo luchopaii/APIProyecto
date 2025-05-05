@@ -1,18 +1,19 @@
-function obtenerChiste(){
-    fetch('https://api.chucknorris.io/jokes/random')
-    .then(res => res.json())
-    .then(data =>{
-        const chiste = data.value;
-        document.getElementById('chisteArea1').value = chiste;
-    })
-    .catch(error =>{
-        console.error('Error al obtener el chiste:',error);
-    })
+function getJoke() {
+    const jokeArea = document.getElementById('jokeArea'); 
+    const apiUrl = 'https://api.chucknorris.io/jokes/random';
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            jokeArea.value = data.value; 
+        })
+        .catch(error => {
+            console.error('Error fetching the joke:', error);
+            jokeArea.value = 'Failed to fetch a joke. Please try again.';
+        });
 }
 
-/**
- * esta es para el boton limpiar
- */
-document.getElementById('clear').onclick = function(){
-    document.getElementById('chisteArea1').value = '';
-}
+document.getElementById('clear').addEventListener('click', () => {
+    const jokeArea = document.getElementById('jokeArea');
+    jokeArea.value = ''; 
+});

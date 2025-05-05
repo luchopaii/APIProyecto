@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChuckProyect</title>
+    <title>ChuckProject</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Title -->
-    <div class="titleContainer">
-        <h1 class="titulo1">CHUCKPROYECT</h1>
+    <div class="title-container">
+        <h1 class="title">CHUCKPROJECT</h1>
     </div>
     <hr>
 
@@ -21,16 +21,16 @@
     </div>
     <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
-    <!-- Random Joke -->
+    <!-- Joke -->
     <div class="container mt-4">
-        <label for="ChistesRandom" class="form-label"><strong>Aquí se generará un chiste random de Chuck Norris</strong></label>
-        <textarea id="chisteArea1" rows="2" class="form-control" readonly>Chiste aquí</textarea>
+        <label for="jokeArea" class="form-label"><strong>A random Chuck Norris joke will be generated here</strong></label>
+        <textarea id="jokeArea" rows="2" class="form-control" readonly>Joke here</textarea>
     </div>
 
     <!-- Buttons -->
-    <div class="botones mt-3">
-        <button onclick="obtenerChiste()" class="btn1 btn btn-primary"><strong>Presiona aquí para un chiste</strong></button>
-        <button id="clear" class="btn2 btn btn-secondary"><strong>Limpiar</strong></button>
+    <div class="buttons mt-3">
+        <button onclick="getJoke()" class="btn-joke btn btn-primary"><strong>Click here for a joke</strong></button>
+        <button id="clear" class="btn-clear btn btn-secondary"><strong>Clear</strong></button>
     </div>
 
     <!-- Fun Facts -->
@@ -48,13 +48,13 @@
         <h2 class="text-center">Chuck Norris Gallery</h2>
         <div class="row">
             <div class="col-6 col-md-4 mb-3">
-                <img src="https://via.placeholder.com/150" class="img-fluid rounded" alt="Chuck Image 1">
+                <img src="Resources/image.png" class="img-fluid rounded" alt="Chuck Image 1">
             </div>
             <div class="col-6 col-md-4 mb-3">
-                <img src="https://via.placeholder.com/150" class="img-fluid rounded" alt="Chuck Image 2">
+                <img src="Resources/image2.jpg" class="img-fluid rounded" alt="Chuck Image 2">
             </div>
             <div class="col-6 col-md-4 mb-3">
-                <img src="https://via.placeholder.com/150" class="img-fluid rounded" alt="Chuck Image 3">
+                <img src="Resources/image3.jpg" class="img-fluid rounded" alt="Chuck Image 3">
             </div>
         </div>
     </div>
@@ -63,13 +63,13 @@
     <footer class="mt-5 bg-light py-3">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="btn btn-outline-primary rounded-pill px-4 py-2 mx-2 shadow-sm" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="AboutUs.html">About Us</a>
+                <a class="btn btn-outline-success rounded-pill px-4 py-2 mx-2 shadow-sm" href="AboutUs.html">About Us</a>
             </li>
         </ul>
-        <p class="text-center mt-3">© 2025 ChuckProyect. All rights are NOT reserved.</p>
+        <p class="text-center mt-3">© 2025 ChuckProject. All rights are NOT reserved.</p>
     </footer>
 
     <script src="api.js"></script>
